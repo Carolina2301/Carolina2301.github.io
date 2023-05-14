@@ -1,0 +1,71 @@
+@font-face {
+  font-family: cupcake;
+  src: url(fonts/cupcake.woff2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 36px;
+  }
+
+  body{
+    display:grid;
+    align-items:center;
+    align-content: space-around;
+    text-align: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #e6e6ea;
+  }
+  
+  nav {
+    background-color: #e6e6ea;
+  }
+  
+  ul {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    background-color: #f4f4f8;
+    margin: 0;
+    padding: 0;
+    list-style:armenian;
+  }
+  
+  li {
+    display: block;
+  }
+  
+  a {
+    
+    display: block;
+    padding: 40px;
+    color: #2ab7ca;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'cupcake';
+  }
+  
+  a:hover {
+    background-color: #fed766;
+    color: #fe4a49;
+  }
+
+  nav .first-item:hover {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  nav .last-item:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  nav li:not(:first-of-type):not(:last-of-type) a:hover {
+    border-radius: 0;
+  }
+
+  

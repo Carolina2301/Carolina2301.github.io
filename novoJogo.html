@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComuniCards</title>
+    
+    <link rel="stylesheet" href="novoJovo.css">
+    <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="/images/icon.ico" type="image/x-icon">
+    <link href="fonts/cupcake.woff2" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <audio id="correct-audio"><source src="audios/correct.mp3" type="audio/mpeg"></audio>
+    <audio id="incorrect-audio"><source src="audios/incorrect.mp3" type="audio/mpeg"></audio>
+
+    <audio id="audio1"><source src="feliz_audio1.mp3" type="audio/mpeg"></audio>
+    <audio id="audio2"><source src="sono_audio2.mp3" type="audio/mpeg"></audio>
+    <audio id="audio3"><source src="surpreso_audio3.mp3" type="audio/mpeg"></audio>
+    <audio id="audio4"><source src="triste_audio4.mp3" type="audio/mpeg"></audio>
+
+    <div class="button-container">
+      <button onclick="window.location.href='index.html'">Voltar ao menu</button>
+      <button onclick="window.location.reload();">Novo Jogo</button>
+      <div  class="info">
+        <h3 id="tentativas">Tentativas: 0</h3>
+        <!-- <h3 id="deck">Deck: 0</h3> -->
+        <!-- <h3 id="recorde">Recorde: 0</h3> -->
+      </div>
+      
+    </div>
+
+    <div class="wrapper">
+      <ul class="cards"></ul>
+    </div>
+    <script src="createCards.js"></script>
+    <script src="novoJogo.js"></script>
+  </body>
+</html>
+
+
+<!-- <li class="card" data-audio="audio1">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio1">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-1.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio2">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio2">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-2.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio3">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio3">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-3.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio4">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-4.png" alt="card-img">
+          </div>
+        </li>
+        <li class="card" data-audio="audio4">
+          <div class="view front-view">
+            <img src="cards/question-mark.png" alt="icon">
+          </div>
+          <div class="view back-view">
+            <img src="cards/img-4.png" alt="card-img">
+          </div>
+        </li> -->
