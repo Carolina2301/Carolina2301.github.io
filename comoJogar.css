@@ -1,3 +1,8 @@
+@font-face {
+  font-family: cupcake;
+  src: url(fonts/cupcake.woff2);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -12,15 +17,23 @@
     text-align: center;
     justify-content: center;
     min-height: 100vh;
-    background: #219ebc;
+    background: #e6e6ea;
+    background-image: url(images/bg-image.svg);
+    background-size:cover;
+    
   }
 
-  .howTo{
-    background-color: #8ecae6;
+img{
+  width: 500px;
+}
+
+  .instructions{
+    background-color: #2ab7ca;
     padding: 15px;
+    padding-left: 50px;
     border-radius: 10px;
     text-align: justify;
-    color:black;
+    color:#F4F4F8;
     line-height: 40px;
   }
 
@@ -38,31 +51,32 @@
     font-weight: bolder;
     text-transform: uppercase;
     text-decoration: none;
-    background-color: #ffe196;
-    color:#fb8500;
+    background: #2ab7ca;
+    color:#f4f4f8;
+    padding: 15px;
+    border: 0px;
+    font-family: 'cupcake';
+  
+  }
+  
+  button:hover{
+    background: #fed766;
+    color:#fe4a49;
   }
 
   h1 {
     margin-bottom: 40px;
-    color: black;
+    color: #F4F4F8;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
+    font-family: 'cupcake';
   }
   
   h3 {
-    color: black;
+    color: #F4F4F8;
     font-size: 24px;
     text-align: center;
     margin-top: 10px;
   }
-
-  button {
-    padding: 15px;
-    font-size: 30px;
-    margin: 15px;
-  }
-
-
-  

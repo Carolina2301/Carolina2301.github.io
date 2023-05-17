@@ -4,7 +4,8 @@ let tentativas = 0;
 let disableDeck = false;
 let cardOne, cardTwo;
 let cardOneImg, cardTwoImg;
-let imgPath;
+
+const imgPath = "cards/emotions/emotion_img-";
 
 // Elementos de áudio
 const correctaudio = document.getElementById("correct-audio");
@@ -36,6 +37,7 @@ function flipCard({target: clickedCard}) {
       disableDeck = true;
       cardOneImg = cardOne.querySelector(".back-view img").src,
       cardTwoImg = cardTwo.querySelector(".back-view img").src;
+      alert(cardOneImg, cardTwoImg);
       matchCards(cardOneImg, cardTwoImg);
   }
 }
@@ -87,18 +89,6 @@ function shuffleCard(cardSet) {
   cardOne = cardTwo = null;
 
   console.log(cardSet);
-
-  // Seleciona o caminho das imagens com base no conjunto de cartas escolhido
-  switch (cardSet) {
-    case "emotions":
-      imgPath = "cards/emotions/emotion_img-";
-      break;
-    case "food":
-      imgPath = "cards/food/food_img-";
-      break;
-    default:
-      imgPath = "cards/emotions/emotion_img-";
-  }
 
   // Embaralha o array
   arr.sort(() => (Math.random() > 0.5 ? 1 : -1));

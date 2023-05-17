@@ -1,0 +1,30 @@
+{
+  "name": "comunicards-memory",
+  "version": "1.0.0",
+  "main": "index.html",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carolina2301/comunicards-memory.git"
+  },
+  "author": "Carolina Saito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carolina2301/comunicards-memory/issues"
+  },
+  "homepage": "https://github.com/Carolina2301/comunicards-memory#readme",
+  "dependencies": {
+    "sweetalert2": "^11.4.8"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [],
+  "description": ""
+}

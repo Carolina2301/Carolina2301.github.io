@@ -14,7 +14,7 @@ body{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: #219ebc;
+  background: #2ab7ca;
 }
 
 .button-container {
@@ -30,21 +30,29 @@ button {
   font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #ffe196;
-  color:#fb8500;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #fed766;
+  color:#fe4a49;
+  border: 0px;
+}
+
+button:hover{
+  background: #fe4a49;
+  color:#fed766;
 }
 
 .info{
   font-size: 24px;
   text-align: center;
-  color: #fff;
+  color: #FED766;
   margin-top: 100px;
 }
 
 .wrapper{
   padding: 25px;
   border-radius: 10px;
-  background: #8ecae6;
+  background: #FED766;
   box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 .cards, .card, .view{

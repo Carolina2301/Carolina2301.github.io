@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComuniCards</title>
+    
+    <link rel="stylesheet" href="../fases.css">
+    <link rel="shortcut icon" href="../../images/icon.ico" type="image/x-icon">
+    <link rel="icon" href="../../images/icon.ico" type="image/x-icon">
+    <link href="../../fonts/cupcake.woff2" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <audio id="correct-audio"><source src="../../audios/correct.mp3" type="audio/mpeg"></audio>
+    <audio id="incorrect-audio"><source src="../../audios/incorrect.mp3" type="audio/mpeg"></audio>
+
+    <!--<audio id="audio1"><source src="feliz_audio1.mp3" type="audio/mpeg"></audio>
+    <audio id="audio2"><source src="sono_audio2.mp3" type="audio/mpeg"></audio>
+    <audio id="audio3"><source src="surpreso_audio3.mp3" type="audio/mpeg"></audio>
+    <audio id="audio4"><source src="triste_audio4.mp3" type="audio/mpeg"></audio>-->
+
+    <div class="button-container">
+      <button onclick="window.location.href='../../index.html'">Voltar ao menu</button>
+      <button onclick="window.location.reload();">Reiniciar fase</button>
+      <div  class="info">
+        <h3 id="tentativas">Tentativas: 0</h3>
+      </div>
+    </div>
+    <div class="wrapper">
+      <ul class="cards"></ul>
+    </div>
+    <script src="emocoesCreate_fase1.js"></script>
+    <script src="emocoes_fase1.js"></script>
+    <script src="../../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  </body>
+</html>

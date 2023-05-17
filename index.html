@@ -1,24 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">  
         <title>ComuniCards | Menu</title>
         <link rel="stylesheet" href="index.css">
         <link rel="shortcut icon" href="/images/icon.ico" type="image/x-icon">
         <link rel="icon" href="/images/icon.ico" type="image/x-icon">
-        <link href="fonts/cupcake.woff2" rel="stylesheet" type="text/css">
+        <link href="fonts/cupcake.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
     <body>
-        <header><img src="images/ComuniCards.png" alt="ComuniCards"></header>
+        <header><img src="images/ComuniCards.svg" alt="ComuniCards" class="logo"></header>  
         <nav>
             <ul>
-                <li><a href="novoJogo.html" class="first-item">Novo Jogo</a></li>
-                <li><a href="comoJogar.html">Como Jogar</a></li>
-                <li><a href="config.html" class="last-item">Configurar Jogo</a></li>
+                <li><a class="first-item" id="novoJogoLink">Novo Jogo</a></li>
+                <!--<li><a href="config.html">Configurar Jogo</a></li>-->
+                <li><a href="comoJogar.html" class="last-item">Como Jogar</a></li>
             </ul>
         </nav>
+        <script src="index.js"></script>
+        <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>
     

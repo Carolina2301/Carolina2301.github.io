@@ -1,0 +1,58 @@
+@font-face {
+    font-family: cupcake;
+    src: url(fonts/cupcake.woff2);
+  }
+
+*{
+    font-family: 'cupcake';
+}
+
+.swal2-popup{
+    background: #e6e6ea;
+  }
+
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color:#f4f4f8;
+    color: #2ab7ca;
+    font-size: 1em;
+  }
+  .swal2-styled.swal2-confirm:focus {
+    box-shadow: 0 0 0 3px #2ab7ca7a;
+  }
+  
+  .swal2-styled.swal2-deny {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color:#2ab7ca;
+    color: #f4f4f8;
+    font-size: 1em;
+  }
+  .swal2-styled.swal2-deny:focus {
+    box-shadow: 0 0 0 3px #2ab7ca7a;
+  }
+
+  .swal2-styled.swal2-cancel {
+    border: 0;
+    border-radius: 0.25em;
+    background: initial;
+    background-color: #2ab7ca;
+    color: #f4f4f8;
+    font-size: 1em;
+  }
+  .swal2-styled.swal2-cancel:focus {
+    box-shadow: 0 0 0 3px #2ab7ca7a;
+  }
+  
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/
+/*********************************/

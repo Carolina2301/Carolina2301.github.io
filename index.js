@@ -1,0 +1,26 @@
+document.addEventListener("DOMContentLoaded", function() {
+  const novoJogoLink = document.getElementById("novoJogoLink");
+
+  novoJogoLink.addEventListener("click", function(event) {
+    event.preventDefault();
+
+    Swal.fire({
+      title: 'Selecione um deck de cartas:',
+      showCancelButton: true,
+      showDenyButton: true,
+      confirmButtonText: '<div><img src="/images/emocao.svg" alt="Imagem"></div><div>Emoções</div>',
+      denyButtonText: '<div><img src="/images/comida.svg" alt="Imagem"></div><div>Comidas</div>',
+      cancelButtonText: 'Voltar',
+      reverseButtons: true,
+      confirmButtonColor: '#2AB7CA',
+      denyButtonColor: '#2AB7CA',
+      cancelButtonColor: '#2AB7CA',
+    }).then((result) => {
+      if (result.isConfirmed) {
+        window.location.href = '/fases/fase1/emocoes_fase1.html';
+      }else if(result.isDenied){
+        window.location.href = '/fases/fase1/comidas_fase1.html';
+      }
+    });
+  });
+});

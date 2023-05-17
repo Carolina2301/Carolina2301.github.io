@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta charset="utf-8">  
         <title>ComuniCards | Menu</title>
@@ -10,23 +10,29 @@
     </head>
 
     <body>
-        <header><img src="images/ComuniCards.png" alt="ComuniCards"></header>
+        <header><img src="images/ComuniCards.svg" alt="ComuniCards" class="logo"></header>
 
-        <div>
-            <!--<img src="cards/emotions/emotion_img-1.png" id="emotions" alt="Emotions">
-            <img src="cards/emotions/emotion_img-2.png" id="food" alt="Food">-->
-            <button onclick="changeSelection('emotions')">emotions</button>
-            <button onclick="changeSelection('food')">food</button>
-
+        <div class="options">
+            <div class="emotions">
+                <img class="emotions-img"
+                src="images/emocoes.svg"
+                id="emotions" alt="Emoções">
+            </div>
+            <div class="comidas">
+                <img class="comidas-img"
+                src="images/comidas.svg"
+                id="food" alt="Comidas">
+            </div>
+            
         </div>
 
         <div class="button-container">
             <button onclick="window.location.href='index.html';">Voltar</button>
             <button>Salvar</button>
-            <button onclick="window.location.href='novoJogo.html';">Novo Jogo</button>
         </div>
-        <script> </script>
-        <script src="novoJogo.js"></script>
+        <script src="fases/comidas_fase1.js"></script>
+        <script src="fases/emocoes_fase1.js"></script>
         <script src="config.js"></script>
+        <script src="/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
     </body>
 </html>

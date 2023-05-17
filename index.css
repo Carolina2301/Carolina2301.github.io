@@ -7,9 +7,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'cupcake';
     font-size: 36px;
   }
+
+.logo{
+  width: 700px;
+}
 
   body{
     display:grid;
@@ -19,6 +23,8 @@
     justify-content: center;
     min-height: 100vh;
     background: #e6e6ea;
+    background-image: url(images/bg-image.svg);
+    background-size:cover;
   }
   
   nav {
@@ -28,7 +34,7 @@
   ul {
     border-radius: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    background-color: #f4f4f8;
+    background-color: #2ab7ca;
     margin: 0;
     padding: 0;
     list-style:armenian;
@@ -42,7 +48,7 @@
     
     display: block;
     padding: 40px;
-    color: #2ab7ca;
+    color: #f4f4f8;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
@@ -67,5 +73,4 @@
   nav li:not(:first-of-type):not(:last-of-type) a:hover {
     border-radius: 0;
   }
-
   

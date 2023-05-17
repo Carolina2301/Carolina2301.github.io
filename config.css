@@ -1,3 +1,8 @@
+@font-face {
+  font-family: cupcake;
+  src: url(fonts/cupcake.woff2);
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -5,14 +10,50 @@
   font-family: sans-serif;
   font-size: 24px;
 }
+
+.logo{
+  width: 700px;
+}
+
+.options{
+  display: flex;
+  justify-content: center;
+}
+
+.emotions{
+  display: flex;
+  justify-content: center;
+  padding-left: 0px;
+  height: 230px;
+}
+
+.emotions-img{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+.comidas{
+  display: flex;
+  justify-content: center;
+  padding-right: 0px;
+  height: 230px;
+}
+
+.comidas-img{
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
 body{
-  display:grid;
+  display: grid;
   align-items:center;
   align-content: space-around;
   text-align: center;
   justify-content: center;
   min-height: 100vh;
-  background: #219ebc;
+  background: #e6e6ea;
+  background-image: url(images/bg-image.svg);
+    background-size:cover;
 }
 
 .button-container {
@@ -29,6 +70,15 @@ button {
   font-weight: bolder;
   text-transform: uppercase;
   text-decoration: none;
-  background-color: #ffe196;
-  color:#fb8500;
+  background: #2ab7ca;
+  color:#f4f4f8;
+  padding: 20px;
+  border: 0px;
+  font-family: 'cupcake';
+
+}
+
+button:hover{
+  background: #fed766;
+  color:#fe4a49;
 }
