@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", function() {
       title: 'Selecione um deck de cartas:',
       showCancelButton: true,
       showDenyButton: true,
-      confirmButtonText: '<div><img src="/images/emocao.svg" alt="Imagem"></div><div>Emoções</div>',
-      denyButtonText: '<div><img src="/images/comida.svg" alt="Imagem"></div><div>Comidas</div>',
+      confirmButtonText: '<div><img src="C:/GitHub/Carolina2301.github.io/images/emocao.svg" alt="Imagem"></div><div>Emoções</div>',
+      denyButtonText: '<div><img src="C:/GitHub/Carolina2301.github.io/images/comida.svg" alt="Imagem"></div><div>Comidas</div>',
       cancelButtonText: 'Voltar',
       reverseButtons: true,
       confirmButtonColor: '#2AB7CA',
@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function() {
       cancelButtonColor: '#2AB7CA',
     }).then((result) => {
       if (result.isConfirmed) {
-        window.location.href = '/fases/fase1/emocoes_fase1.html';
+        window.location.href = 'C:/GitHub/Carolina2301.github.io/fases/fase1/emocoes_fase1.html';
       }else if(result.isDenied){
-        window.location.href = '/fases/fase1/comidas_fase1.html';
+        window.location.href = 'C:/GitHub/Carolina2301.github.io/fases/fase1/comidas_fase1.html';
       }
     });
   });
