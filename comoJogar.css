@@ -19,12 +19,13 @@
     min-height: 100vh;
     background: #e6e6ea;
     background-image: url(images/bg-image.svg);
-    background-size:cover;
+    background-size:100%;
     
   }
 
 img{
-  width: 500px;
+  width: 100%;
+  max-width: 700px;
 }
 
   .instructions{
@@ -79,4 +80,42 @@ img{
     font-size: 24px;
     text-align: center;
     margin-top: 10px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    /* Estilos para telas de smartphone */
+    
+    img {
+      max-width: 80%;
+    }
+    .instructions{
+      max-width: 70%;
+      margin: 0 auto;
+      display: grid;
+      text-align:left;
+    }
+
+    ol li::marker {
+      font-weight: bold;
+    }
+    
+    li {
+      margin-bottom: 20px;
+    }
+
+    body {
+
+      background-image: url(images/bg-image-mobile.svg);
+      background-size:100%;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    /* Estilos para telas de dispositivos móveis menores */
+    
+    a {
+      font-size: 18px;
+      padding: 3vw;
+    }
   }

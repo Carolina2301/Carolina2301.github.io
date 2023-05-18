@@ -11,8 +11,9 @@
     font-size: 36px;
   }
 
-.logo{
-  width: 700px;
+#logo{
+  width: 100%;
+  max-width: 700px;
 }
 
   body{
@@ -24,7 +25,7 @@
     min-height: 100vh;
     background: #e6e6ea;
     background-image: url(images/bg-image.svg);
-    background-size:cover;
+    background-size:100%;
   }
   
   nav {
@@ -45,9 +46,8 @@
   }
   
   a {
-    
     display: block;
-    padding: 40px;
+    padding: 4vw;
     color: #f4f4f8;
     text-decoration: none;
     font-weight: bold;
@@ -74,3 +74,63 @@
     border-radius: 0;
   }
   
+  /* Media queries para ajustar o layout em diferentes tamanhos de tela */
+
+@media screen and (max-width: 768px) {
+  /* Estilos para telas de smartphone */
+  
+  #logo {
+    max-width: 70%;
+  }
+
+  body{
+    background-image: url(images/bg-image-mobile.svg);
+    background-size:100%;
+
+  }
+
+  .options {
+    background-image: url(images/bg-image-mobile.svg);
+    background-size: 100%;
+  }
+
+  ul {
+
+    max-width: 60%;
+    margin: 0 auto;
+    height: 30vh;
+    display: grid;
+  }
+
+  a {
+    height: 15vh;
+    font-size: 50px;
+    padding:15% 0;
+  }
+
+  .custom-sawl-confirmButton{
+    width: 30%;
+    height: 100%;
+  }
+
+  .custom-sawl-denyButton{
+    width: 30%;
+    height: 100%;
+  }
+
+  .button-image {
+    width: 100%;
+    height: 100%;
+    /* Outros estilos desejados */
+  }
+  
+}
+
+@media screen and (max-width: 480px) {
+  /* Estilos para telas de dispositivos móveis menores */
+  
+  a {
+    font-size: 18px;
+    padding: 3vw;
+  }
+}

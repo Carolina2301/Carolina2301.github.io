@@ -123,9 +123,9 @@ button:hover{
   transform: rotateY(180deg);
 }
 
-/*@media screen and (max-width: 700px) {
+@media screen and (max-width: 768px) {
   .cards{
-    height: 350px;
+    height: 350%;
     width: 350px;
   }
   .card .front-view img{
@@ -147,4 +147,4 @@ button:hover{
   .card .back-view img{
     max-width: 35px;
   }
-}*/
+}
