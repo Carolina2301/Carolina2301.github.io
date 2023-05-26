@@ -6,7 +6,6 @@ window.addEventListener('load', function() {
   }
 });
 
-
 document.addEventListener("DOMContentLoaded", function() {
   const novoJogoLink = document.getElementById("novoJogoLink");
 

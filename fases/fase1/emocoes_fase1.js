@@ -57,9 +57,12 @@ function matchCards(type1, type2) {
         text: 'Você concluiu a fase 1.',
         icon: 'success',
         showCancelButton: true,
+        showDenyButton: true,
         confirmButtonText: 'Iniciar fase 2',
+        denyButtonText: 'Compartilhar resultado',
         cancelButtonText: 'Voltar ao menu',
         confirmButtonColor: '#2AB7CA',
+        denyButtonColor: '#128C7E',
         reverseButtons: true,
         allowOutsideClick: false,
         allowEscapeKey: false
@@ -68,7 +71,7 @@ function matchCards(type1, type2) {
           window.location.href = '../fase2/emocoes_fase2.html';
         }else if(result.isDismissed){
           window.location.href = '../../index.html';
-        }
+        }//else if(result.isDenied){;}
       });
         setTimeout(() => {
             return shuffleCard();

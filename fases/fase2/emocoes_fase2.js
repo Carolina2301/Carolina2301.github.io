@@ -69,14 +69,18 @@ function matchCards(type1, type2) {
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você concluiu todas as fases!',
+        icon: 'success',
+        showDenyButton: true,
         confirmButtonText: 'Voltar ao menu',
+        denyButtonText: 'Compartilhar resultado',
         confirmButtonColor: '#2AB7CA',
+        denyButtonColor: '#128C7E',
         allowOutsideClick: false,
         allowEscapeKey: false
       }).then((result) => {
         if(result.isConfirmed){
           window.location.href = '../../index.html';
-        }
+        }//else if(result.isDenied){;}
       });
         setTimeout(() => {
             return shuffleCard();
