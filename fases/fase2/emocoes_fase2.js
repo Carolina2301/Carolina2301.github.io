@@ -65,7 +65,7 @@ function matchCards(type1, type2) {
     matched++;
     correctaudio.play();
 
-    if(matched === 4) {
+    if(matched == 4) {
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você concluiu todas as fases!',

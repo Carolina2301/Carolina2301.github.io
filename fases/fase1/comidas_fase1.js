@@ -52,6 +52,7 @@ function matchCards(type1, type2) {
     correctaudio.play();
 
     if(matched == 4) {
+
       Swal.fire({
         title: 'Parabéns!',
         text: 'Você concluiu a fase 1.',
@@ -126,7 +127,6 @@ function shuffleArray(array) {
   }
   return array;
 }
-
 
 // Embaralha as cartas
 shuffleCard();
