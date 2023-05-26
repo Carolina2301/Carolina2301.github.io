@@ -51,7 +51,7 @@ function matchCards(type1, type2) {
     matched++;
     correctaudio.play();
 
-    if(matched == 1) {
+    if(matched == 4) {
 
       Swal.fire({
         title: 'Parabéns!',
